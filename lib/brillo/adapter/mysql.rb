@@ -2,7 +2,7 @@ module Brillo
   module Adapter
     class MySQL < Base
       def header
-        super + <<-SQL
+        <<-SQL
         -- Disable autocommit, uniquechecks, and foreign key checks, for performance on InnoDB
         -- http://dev.mysql.com/doc/refman/5.5/en/optimizing-innodb-bulk-data-loading.html
         SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, AUTOCOMMIT = 0;

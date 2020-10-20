@@ -10,3 +10,4 @@ gemfiles/*.gemfile.lock
 /spec/examples.txt
 /tmp/
 /*.gem
+/vendor/
